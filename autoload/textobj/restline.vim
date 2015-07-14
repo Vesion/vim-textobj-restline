@@ -29,6 +29,7 @@ function! textobj#restline#select_i()
     if line[startpos[2]-1] =~# '\s'
         normal! w
         let startpos = getpos('.')
+    endif
 
     normal! g_
     let endpos = getpos('.')
