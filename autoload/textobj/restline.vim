@@ -15,11 +15,10 @@ function! textobj#restline#select_a()
     let endpos = getpos('.')
 
     return ['v', startpos, endpos] 
-
 endfunction
 
 
-function! textobj#line#select_i()
+function! textobj#restline#select_i()
     let line = getline('.')
 
     if empty(line)
@@ -32,9 +31,9 @@ function! textobj#line#select_i()
         let startpos = getpos('.')
 
     normal! g_
-    let tail_pos = getpos('.')
+    let endpos = getpos('.')
 
-    let non_blank_char_exists = getline('.')[startpos[2]-1] !~# '\s'
+    let non_blank_char_exists = line[startpos[2]-1] !~# '\s'
     return
     \ non_blank_char_exists
     \ ? ['v', startpos, endpos]

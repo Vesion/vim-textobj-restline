@@ -5,7 +5,7 @@
 
 
 if exists('g:loaded_textobj_restline')
-    return
+    finish
 endif
 
 
