@@ -1,5 +1,3 @@
-# vim-textobj-restline
-
 vim-textobj-restline
 =================
 
