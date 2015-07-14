@@ -18,4 +18,4 @@ Installation
 ------------
 I recommend installing it via vundle ([https://github.com/gmarik/vundle](https://github.com/gmarik/vundle)):
 
-    Plugin 'gilligan/textobj-gitgutter'
+    Plugin 'Vesion/vim-textobj-restline'
